@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button onclick="show_hide()" class="button">Choose Language</button>
+     
+            
+            <div id="list-items">
+               <a href="#"> Hindi </a>
+               <a href="#"> English </a>
+               <a href="#"> Spanish </a>
+               <a href="#"> Chinese </a>
+               <a href="#"> Japanese </a>
+            </div>
+
+          
+        </div>
+        <div class="dropdown">
+        <button onclick="show_hide2()" class="button">Choose a Religion</button>
+     
+            
+        <div id="list-items1">
+           <a href="#"> Islam </a>
+           <a href="#"> Christianity </a>
+           <a href="#"> Jewism </a>
+           <a href="#"> Budism </a>
+           <a href="#"> Shaman </a>
+        </div>
+      </div>
+      <div class="dropdown">
+         <button onclick="show_hide3()" class="button">Choose a Regionn</button>
+      
+             
+             <div id="list-items2">
+                <a href="#"> Asia </a>
+                <a href="#"> Europa </a>
+                <a href="#"> Middle-East </a>
+                <a href="#"> America </a>
+                <a href="#"> Australia </a>
+             </div>
+ 
+           
+         </div>
+
+            
+         
+    <style>
+   
+        .dropdown {
+             position: relative;
+             display: inline-block;
+        }
+     
+        .button {
+             padding: 10px 30px;
+             font-size: 15px;
+        }
+  
+        #list-items , #list-items1, #list-items2{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 185px;
+        }
+   
+
+
+    
+        #list-items a {
+             display: block;
+             font-size: 18px;
+             background-color: #ddd;
+             color: black;
+             text-decoration: none;
+             padding: 10px;
+             text-align: center;
+        }
+
+        #list-items1 a {
+             display: block;
+             font-size: 18px;
+             background-color: #ddd;
+             color: black;
+             text-decoration: none;
+             padding: 10px;
+             text-align: center;
+        }
+        #list-items2 a {
+             display: block;
+             font-size: 18px;
+             background-color: #ddd;
+             color: black;
+             text-decoration: none;
+             padding: 10px;
+             text-align: center;
+        }
+
+
+
+
+
+        </style>
+        
+        <script>
+     
+              function show_hide() {
+                 var click = document.getElementById("list-items");
+                 if(click.style.display ==="none") {
+                    click.style.display ="block";
+                 } else {
+                    click.style.display ="none";
+                 } 
+              }
+              function show_hide2() {
+                 var click = document.getElementById("list-items1");
+                 if(click.style.display ==="none") {
+                    click.style.display ="block";
+                 } else {
+                    click.style.display ="none";
+                 } 
+              }
+              function show_hide3() {
+                 var click = document.getElementById("list-items2");
+                 if(click.style.display ==="none") {
+                    click.style.display ="block";
+                 } else {
+                    click.style.display ="none";
+                 } 
+              }
+              
+              
+           </script>
+    
+
+</body>
+</html>
